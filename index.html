@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JagatSafari - Wahana Edukasi & Konservasi Satwa</title>
+    <!-- Menghubungkan ke file style.css bawaan Anda -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk Ikon Media Sosial dan Kontak -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR SECTION ================= -->
+    <nav class="navbar">
+        <div class="logo">JagatSafari</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#zona">Menu Wahana</a></li>
+            <li><a href="#booking">Reservasi</a></li>
+            <li><a href="#hubungi">Hubungi Kami</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+            <a href="#" class="icon-cart"><i class="fas fa-shopping-basket"></i></a>
+            <a href="#booking" class="btn-nav-booking">Pesan Tiket</a>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION (Foto Ke-3) ================= -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="sub-title">Sajian Petualangan Indonesia</span>
+                <h1>Jelajahi Keajaiban Alam Liar Nusantara</h1>
+                <p>Nikmati kehangatan liburan keluarga langsung di alam terbuka. Jelajahi rasa ingin tahu anak dengan
+                    kombinasi edukasi, kesegaran alam, dan kehangatan tradisi dalam setiap jengkal habitat satwa. Pesan
+                    tiket sekarang dan nikmati kelezatan petualangan khas Indonesia!</p>
+                <a href="#booking" class="btn-primary">Pesan Sekarang</a>
+            </div>
+            <div class="hero-image">
+                <!-- Foto utama bertema safari/kebun binatang -->
+                <img src="wahana.png" alt="Safari Utama">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ZONA SATWA GRID (Foto Ke-2 & Ke-4) ================= -->
+    <section id="zona" class="zona-section">
+        <div class="center-title">
+            <h2>Pilihan Menu Wahana</h2>
+        </div>
+
+        <div class="zona-grid">
+            <!-- Wahana 1 -->
+            <div class="zona-card">
+                <img src="wahana1.png" alt="Zululand Savana">
+                <div class="card-content">
+                    <h3>Zululand Savana</h3>
+                    <p>Zululand Savana adalah salah satu kawasan konservasi satwa khas Afrika yang terkenal dengan
+                        hamparan rumput luas dan ekosistem alamiah yang terjaga segar.</p>
+                </div>
+            </div>
+
+            <!-- Wahana 2 -->
+            <div class="zona-card">
+                <img src="wahana2.png" alt="Kubah Reptil">
+                <div class="card-content">
+                    <h3>Kubah Reptil Eksotis</h3>
+                    <p>Kubah Reptil berupa ruangan semi-outdoor dengan aneka spesies melata khas Nusantara yang dirawat
+                        dalam kondisi suhu terkontrol demi keamanan bersama.</p>
+                </div>
+            </div>
+
+            <!-- Wahana 3 -->
+            <div class="zona-card">
+                <img src="wahana3.png" alt="Bird Aviary">
+                <div class="card-content">
+                    <h3>Bird Aviary Park</h3>
+                    <p>Bird Aviary merupakan habitat sangkar raksasa yang menyajikan keindahan kepakan sayap burung
+                        endemik Indonesia yang bisa Anda beri pakan secara langsung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RESERVASI & PETA FIXED (Foto Ke-1) ================= -->
+    <section id="booking" class="booking-section">
+        <div class="booking-container">
+            <!-- Sisi Kiri: Form Tiket -->
+            <div class="form-box">
+                <h2>Book A Ticket</h2>
+                <form onsubmit="prosesForm(event)">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option value="" disabled selected>How many persons?</option>
+                            <option>1 Orang</option>
+                            <option>2 Orang</option>
+                            <option>3 Orang</option>
+                            <option>Lebih dari 4 Orang</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" required>
+                    </div>
+                    <button type="submit" class="btn-submit">BOOK NOW</button>
+                </form>
+            </div>
+
+            <!-- Sisi Kanan: Google Maps Resmi Menuju SMKN 1 Kota Mojokerto -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.697855688562
+                        !2d112.4312!3d-7.4668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                        1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjgnMDAuMiJTIDExMsKwMjUnNTIuMyJF!5e0!3m2!1sid!2sid
+                        !4v1600000000000!5m2!1sid!2sid" width="100%" height="300%" style="border:0;" allowfullscreen=""
+                loading="lazy"></iframe>"
+
+            <!-- ================= TESTIMONI & FOOTER (Foto Ke-5) ================= -->
+            <section class="customers-section">
+                <div class="center-title">
+                    <h2>What Says Our Customers</h2>
+                </div>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h4>Moana Michell</h4>
+                        <span>Pengunjung Wisata</span>
+                    </div>
+                    <div class="review-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h4>Mike Hamell</h4>
+                        <span>Wisatawan Lokal</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER UTAMA -->
+            <footer id="hubungi" class="main-footer">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kedung Sari, Mergelo, Gn. Gedangan, Kec. Magersari,
+                            Kota Mojokerto, Jawa Timur 61315</p>
+                        <p><i class="fas fa-phone"></i> +62 321 381959</p>
+                        <p><i class="fas fa-envelope"></i> layanansafari@gmail.com</p>
+                    </div>
+                    <div class="footer-col text-center">
+                        <h2 class="footer-logo">JagatSafari</h2>
+                        <div class="social-links">
+                            <a href="#"><img src="facebook.png" style="width: 30px;"></a>
+                            <a href="#"><img src="instagram.png" style="width: 30px;"></a>
+                            <a href="#"><img src="twitter.png" style="width: 30px;"></a>
+                        </div>
+                    </div>
+                    <div class="footer-col text-right">
+                        <h3>Opening Hours</h3>
+                        <p>Everyday 09:00 AM - 18:00 PM</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 All Rights Reserved By Ref_Atha</p>
+                </div>
+            </footer>
+
+            <script>
+                function prosesForm(event) {
+                    event.preventDefault();
+                    alert('Pemesanan tiket berhasil dicatat! Kode tiket elektronik akan segera dikirimkan ke nomor WhatsApp Anda.');
+                }
+            </script>
+</body>
+
+</html>
